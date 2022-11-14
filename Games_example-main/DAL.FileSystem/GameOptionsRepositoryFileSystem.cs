@@ -14,6 +14,8 @@ public class GameOptionsRepositoryFileSystem : IGameOptionsRepository
     private const string FileExtension = "json";
     private readonly string _optionsDirectory = "." + System.IO.Path.DirectorySeparatorChar + "options";
 
+    public string Name { get; } = "FileSystem";
+
     public List<string> GetGameOptionsList()
     {
         CheckOrCreateDirectory();

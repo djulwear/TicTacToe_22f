@@ -8,7 +8,7 @@ public class TicTacToeOption
 
     public string Name { get; set; } = default!;
 
-    public int Width { get; set; } = 3; 
+    public int Width { get; set; } = 5; 
     public int Height { get; set; } = 3;
     public int RandomMoves { get; set; } = 0;
     public bool WhiteStarts { get; set; } = true;

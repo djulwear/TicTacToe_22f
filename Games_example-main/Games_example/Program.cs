@@ -13,8 +13,10 @@ using System.Diagnostics.Tracing;
 using Microsoft.EntityFrameworkCore;
 
 
+
 var gameOptions = new TicTacToeOption();
 gameOptions.Name = "SNDoptions";
+    
 
 
 var game = new TicTacToeBrain(gameOptions);
