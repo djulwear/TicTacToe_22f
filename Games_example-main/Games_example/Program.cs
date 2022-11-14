@@ -12,8 +12,10 @@ using MenuSystem;
 using System.Diagnostics.Tracing;
 using Microsoft.EntityFrameworkCore;
 
+
 var gameOptions = new TicTacToeOption();
-gameOptions.Name = "Standard Game Copy";
+gameOptions.Name = "SNDoptions";
+
 
 var game = new TicTacToeBrain(gameOptions);
 
@@ -73,7 +75,7 @@ var OptionsMenu = new Menu(
         //new MenuItem("S", "Save current options", SaveOptions),
         //new MenuItem("E", "Edit current options", null),
         new MenuItem("I", "Show currect Game Options", ShowGameOptions),
-        new MenuItem("P", "Persistence method swap", null),
+        new MenuItem("P", "Persistence method swap", SwapPersistenceEngine),
     }
 );
 
@@ -100,7 +102,7 @@ string DoNewGame()
 }
 
 // LIST OF COMMANDS FOR OPTIONS MENU
-/*
+
 string SwapPersistenceEngine()
 {
     if (repo == repoDb)
@@ -116,7 +118,7 @@ string SwapPersistenceEngine()
 
     return repo.Name;
 }
-*/
+
 
 string ListGameOptions()
 {

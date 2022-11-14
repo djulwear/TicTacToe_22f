@@ -7,7 +7,7 @@ namespace DAL;
 
 public interface IGameOptionsRepository
 {
-    //string Name { get; }
+    string Name { get; }
     // BUG
 
 
