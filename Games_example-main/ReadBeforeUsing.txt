@@ -1,0 +1,26 @@
+﻿
+///Before Migrations check SQL folder
+UseSqlite("Data Source=/Users/janafjr/Documents/temp_IT/TicTacToe.db")
+ConsoleAPp -> Program.cs (26 line) & AppDbContextFactory.cs (11 line)
+
+///Entity Framework commands
+
+install:
+dotnet tool install --global dotnet-ef
+
+or update:
+dotnet tool update --global dotnet-ef
+
+///Initial migration
+EF Core will not automatically create for you db creation code
+From command line in solution folder
+
+Create new migration:
+dotnet ef migrations add InitialCreate --project DAL --startup-project ConsoleApp 
+
+Update DB
+dotnet ef database update --project DAL --startup-project ConsoleApp 
+
+Delete DB
+dotnet ef database drop --project DAL --startup-project ConsoleApp 
+

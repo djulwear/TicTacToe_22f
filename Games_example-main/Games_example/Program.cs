@@ -23,7 +23,7 @@ var game = new TicTacToeBrain(gameOptions);
 
 var dbOptions =
     new DbContextOptionsBuilder<AppDbContext>()
-        .UseSqlite("Data Source=/Users/janaf/Documents/temp_IT/TicTacToe.db")
+        .UseSqlite("Data Source=/Users/janafjr/Documents/temp_IT/TicTacToe.db")
         .Options;
 
 var ctx = new AppDbContext(dbOptions);
