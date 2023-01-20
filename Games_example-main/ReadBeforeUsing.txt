@@ -1,6 +1,7 @@
 ﻿
-///Before Migrations check SQL folder
+///Before Migrations check SQL url-folder link
 UseSqlite("Data Source=/Users/janafjr/Documents/temp_IT/TicTacToe.db")
+need to make that folder on your computer and write correct path to .db file
 ConsoleAPp -> Program.cs (26 line) & AppDbContextFactory.cs (11 line)
 
 ///Entity Framework commands
